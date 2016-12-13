@@ -1,0 +1,102 @@
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.pdb
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\resources.pri
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppxManifest.xml
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.build.appxrecipe
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppManifest.xaml
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.xml
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Primitives.xml
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\App.g.cs
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\MainPage.g.cs
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\PageLogin.g.cs
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.g.resources
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.Resources.AppResources.resources
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.csproj.GenerateResource.Cache
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.dll
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.pdb
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http.pri
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\qualifiers.txt
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\priconfig.xml
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\priconfig.xml.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\layout.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\layout.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\resources.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\resources.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\pri.resfiles
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\pri.resfiles.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\qualifiers.txt
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\qualifiers.txt.intermediate
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\ProjectArchitectures.txt
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\MDILProjectFiles.xml
+c:\users\gilson\documents\visual studio 2015\Projects\ZipZopWindowsPhone\AppZipZop\obj\Debug\XapCacheFile.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.pdb
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\resources.pri
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppxManifest.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop.build.appxrecipe
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppManifest.xaml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\App.g.cs
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\MainPage.g.cs
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\PageLogin.g.cs
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.g.resources
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.Resources.AppResources.resources
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.csproj.GenerateResource.Cache
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.dll
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.pdb
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http.pri
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\System.Net.Http\qualifiers.txt
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\priconfig.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\priconfig.xml.intermediate
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\layout.resfiles
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\layout.resfiles.intermediate
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\resources.resfiles
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\resources.resfiles.intermediate
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\pri.resfiles
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\pri.resfiles.intermediate
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\qualifiers.txt
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\qualifiers.txt.intermediate
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\ProjectArchitectures.txt
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\MDILProjectFiles.xml
+C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\XapCacheFile.xml
