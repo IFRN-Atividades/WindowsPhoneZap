@@ -40,9 +40,9 @@ namespace AppZipZop
             MessageBox.Show("Usuário criado");
 
             Dispatcher.BeginInvoke(() => {
-                var settings = IsolatedStorageSettings.ApplicationSettings;
+               /* var settings = IsolatedStorageSettings.ApplicationSettings;
                 settings.Add("Nome", usuario.Nome);
-                settings.Save();
+                settings.Save();*/
 
                 NavigationService.Navigate(new Uri("/MainPage.xaml?registered=true", UriKind.Relative));
             });

@@ -63,10 +63,11 @@ namespace AppZipZop
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ip);
 
-            var response = await httpClient.GetAsync("/20131011110029/api/usuuario");
+            var response = await httpClient.GetAsync("/20131011110029/api/usuario");
             var str = response.Content.ReadAsStringAsync().Result;
             List<Models.Usuario> obj = JsonConvert.DeserializeObject<List<Models.Usuario>>(str);
             usuarios = obj;
+            listMsg.ItemsSource = obj;
         }
     }
 }
