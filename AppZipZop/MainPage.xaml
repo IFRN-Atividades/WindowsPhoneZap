@@ -78,7 +78,7 @@
                             </toolkit:ListPicker.FullModeItemTemplate>
                         </toolkit:ListPicker>
 
-                        <Button x:Name="btnEnviarUsuario" Content="Enviar"/>
+                        <Button x:Name="btnEnviarUsuario" Content="Enviar" Click="btnEnviarUsuario_Click"/>
                     </StackPanel>
                 </phone:PivotItem>
 

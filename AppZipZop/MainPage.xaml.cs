@@ -11,6 +11,7 @@ using AppZipZop.Resources;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
+using System.IO;
 
 namespace AppZipZop
 {
@@ -71,6 +72,25 @@ namespace AppZipZop
             listMsg.ItemsSource = obj;
             ListaUsuario.ItemsSource = obj;
             
+        }
+
+        private async void btnEnviarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(ip);
+
+            Models.Mensagem m = new Models.Mensagem
+            {
+                Uri = (ListaUsuario.SelectedItem as Models.Usuario).Uri,
+                Texto1 = txtTituloUsuario.Text,
+                Texto2 = txtTituloGrupo.Text,
+                Param = "MainPage.xaml"
+            };
+            string s = "=" + JsonConvert.SerializeObject(m);
+            var content = new StringContent(s, Encoding.UTF8,
+                "application/x-www-form-urlencoded");
+            await httpClient.PostAsync("/20131011110029/api/mensagem", content);
+            MessageBox.Show("Acho que enviou");
         }
     }
 }
