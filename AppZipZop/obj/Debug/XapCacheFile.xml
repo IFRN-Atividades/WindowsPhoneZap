@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="13/12/2016 10:25:02">
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="13/12/2016 10:24:06" />
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="13/12/2016 10:25:02" />
+﻿<xapCache source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="14/12/2016 10:02:51">
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="14/12/2016 10:02:50" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="14/12/2016 10:02:50" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="13/12/2016 08:18:40" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="13/12/2016 08:18:40" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="13/12/2016 08:18:40" />
@@ -13,9 +13,16 @@
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="13/12/2016 08:18:40" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="13/12/2016 08:18:40" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="13/12/2016 08:18:40" />
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13/12/2016 09:40:49" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="14/12/2016 10:00:28" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="14/12/2016 10:02:51" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="13/12/2016 08:18:40" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="13/12/2016 08:18:40" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="14/12/2016 10:00:24" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="13/06/2016 23:06:14" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll" archivePath="System.Net.Http.dll" lastWriteTime="19/02/2015 20:10:46" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll" archivePath="System.Net.Http.Extensions.dll" lastWriteTime="19/02/2015 20:10:46" />
@@ -24,7 +31,7 @@
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="19/02/2015 20:10:46" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="19/02/2015 20:10:46" />
   <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="19/02/2015 20:10:46" />
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="13/12/2016 09:40:49" />
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="13/12/2016 10:25:02" />
-  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="13/12/2016 09:42:21" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="14/12/2016 09:35:18" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="14/12/2016 10:02:51" />
+  <file source="C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="14/12/2016 10:02:50" />
 </xapCache>

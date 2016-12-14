@@ -11,8 +11,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
-
+    shell:SystemTray.IsVisible="True"
+ xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -42,12 +42,71 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Zip Zop" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="Mensagens" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox Name="listMsg" />
+            <phone:Pivot Margin="-10,-50,10,10">
+                <phone:PivotItem Header="Mensagens">
+                    <phone:LongListSelector x:Name="listMsg">
+                        
+                    </phone:LongListSelector>
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Grupos">
+                    
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Enviar para usuário" FontSize="20">
+                    <StackPanel>
+                        <TextBlock Text="Título" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtTituloUsuario"/>
+                        <TextBlock Text="Mensagem" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtMensagemUsuario" Height="196" />
+                        <TextBlock Text="Usuário" Style="{StaticResource PhoneTextBlockBase}" />
+
+                        <toolkit:ListPicker x:Name="ListaUsuario" Margin="10,0">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+
+                        <Button x:Name="btnEnviarUsuario" Content="Enviar"/>
+                    </StackPanel>
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Enviar para grupo">
+                    <StackPanel>
+                        <TextBlock Text="Título" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtTituloGrupo"/>
+                        <TextBlock Text="Mensagem" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtMensagemGrupo" Height="196" />
+                        <TextBlock Text="Grupo" Style="{StaticResource PhoneTextBlockBase}" />
+
+                        <toolkit:ListPicker x:Name="ListaGrupos" Margin="10,0">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+
+                        <Button x:Name="btnEnviarGrupo" Content="Enviar" />
+                    </StackPanel>
+                </phone:PivotItem>
+            </phone:Pivot>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
