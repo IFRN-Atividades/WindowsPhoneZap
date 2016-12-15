@@ -55,8 +55,9 @@ namespace AppZipZop
                 }
 
                 var content = new StringContent(s, Encoding.UTF8, "application/json");
-                await httpClient.PostAsync("/20131011110029/api/usuario", content);
-                MessageBox.Show("Usuário criado");
+                var response = await httpClient.PostAsync("/20131011110029/api/usuario", content);
+                
+                //MessageBox.Show(Id.ToString());
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             catch (Exception ex)

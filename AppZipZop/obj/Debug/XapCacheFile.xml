@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15/12/2016 17:18:21">
-  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="15/12/2016 17:14:12" />
-  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="15/12/2016 17:18:21" />
+﻿<xapCache source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15/12/2016 17:42:13">
+  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="15/12/2016 17:40:40" />
+  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="15/12/2016 17:42:12" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="15/12/2016 16:42:49" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="15/12/2016 16:42:49" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="15/12/2016 16:42:49" />
@@ -38,6 +38,6 @@
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15/12/2016 16:42:49" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15/12/2016 16:42:49" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15/12/2016 17:12:30" />
-  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15/12/2016 17:18:21" />
+  <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15/12/2016 17:42:12" />
   <file source="C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="15/12/2016 16:53:40" />
 </xapCache>
