@@ -98,6 +98,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Grupo.cs" />
     <Compile Include="Models\Mensagem.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="PageLogin.xaml.cs">

@@ -54,7 +54,16 @@
                 </phone:PivotItem>
 
                 <phone:PivotItem Header="Grupos">
-                    
+                    <phone:LongListSelector x:Name="listaGruposAdministrados" Grid.Row="0">
+                        <phone:LongListSelector.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Descricao}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
+                                    <Button Content="Users" CommandParameter="{Binding Id}" Tap="Button_Tap" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </phone:LongListSelector.ItemTemplate>
+                    </phone:LongListSelector>
                 </phone:PivotItem>
 
                 <phone:PivotItem Header="Enviar para usuário" FontSize="20">
@@ -104,6 +113,40 @@
                         </toolkit:ListPicker>
 
                         <Button x:Name="btnEnviarGrupo" Content="Enviar" />
+                    </StackPanel>
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Criar Grupo">
+                    <StackPanel>
+                        <TextBlock Text="Nome do grupo" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtNomeGrupo" Height="83" />
+                        <TextBlock Text="Administrador" Style="{StaticResource PhoneTextBlockBase}" />
+
+                        <toolkit:ListPicker x:Name="ListaUsuariosAdm" Margin="10,0">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+                        <Button x:Name="btnCriarGrupo" Content="Criar grupo" Click="btnCriarGrupo_Click" />
+                    </StackPanel>
+                </phone:PivotItem>
+
+
+                <phone:PivotItem Header="Editar Perfil">
+                    <StackPanel>
+                        <TextBlock Text="Nome" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtNomeUsuario" Height="83" />
+
+                        <Button x:Name="btnEditarUsuário" Content="Editar perfil" Click="btnEditarUsuário_Click" />
+                        <Button x:Name="btnDeletarUsuário" Content="Deltar perfil" Click="btnDeletarUsuário_Click" />
+
                     </StackPanel>
                 </phone:PivotItem>
             </phone:Pivot>

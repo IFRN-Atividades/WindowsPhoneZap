@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppZipZop.Models
 {
-    class Mensagem
+    public class Mensagem
     {
         public string Uri { get; set; }
         public string Texto1 { get; set; }
