@@ -42,9 +42,10 @@ namespace AppZipZop
                 else
                 {
                     abrirArquivo();
-                    getDados();
+                   // getDados();
                 }
             };
+            getDados();
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
@@ -77,7 +78,6 @@ namespace AppZipZop
             // Este método é chamado e os dados vem na QueryString
             var dic = NavigationContext.QueryString;
             // Atualiza lista de mensagens
-
             //if (dic.ContainsKey("Msg1")) listMsg.Items.Add(dic["Msg1"]);
             //if (dic.ContainsKey("Msg2")) listMsg.Items.Add(dic["Msg2"]);
         }

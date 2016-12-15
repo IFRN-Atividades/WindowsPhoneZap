@@ -1,1 +1,1 @@
-C:\Users\navi\Desktop\gilson\Notifications\ZipZopWindowsPhone\AppZipZop\AppZipZop.csproj;neutral
+C:\Users\20131011110380\Source\Repos\WindowsPhoneZap\AppZipZop\AppZipZop.csproj;neutral

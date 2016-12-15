@@ -138,7 +138,6 @@
                     </StackPanel>
                 </phone:PivotItem>
 
-
                 <phone:PivotItem Header="Editar Perfil">
                     <StackPanel>
                         <TextBlock Text="Nome" Style="{StaticResource PhoneTextBlockBase}" />
@@ -149,6 +148,7 @@
 
                     </StackPanel>
                 </phone:PivotItem>
+                
             </phone:Pivot>
         </Grid>
 
