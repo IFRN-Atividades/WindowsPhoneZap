@@ -46,7 +46,7 @@ namespace AppZipZop
                    // getDados();
                 }
             };
-            getDados();
+            if (checkifUserExists()) getDados();
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
@@ -167,6 +167,11 @@ namespace AppZipZop
                 Usuario_Id = g.IdAdm,
                 GrupoUsuario_Id = int.Parse(await response.Content.ReadAsStringAsync())
             };
+
+            string s2 = JsonConvert.SerializeObject(rel);
+            var content2 = new StringContent(s2, Encoding.UTF8, "application/json");
+            var response2 = await httpClient.PostAsync("/20131011110029/api/relgrupousuario", content2);
+
             MessageBox.Show("Acho que criou");
 
         }

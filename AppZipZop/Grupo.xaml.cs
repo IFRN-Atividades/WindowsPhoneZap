@@ -35,11 +35,8 @@ namespace AppZipZop
 
                 var response = await httpClient.GetAsync("/20131011110029/api/grupousuario");
                 var str = response.Content.ReadAsStringAsync().Result;
-                List<Models.Usuario> obj = JsonConvert.DeserializeObject<List<Models.Usuario>>(str);
-                grupo = (from Models.Grupo g in obj where g.Id == int.Parse(parameter) select g).Single();
-
-                
-                
+                List<Models.Grupo> obj = JsonConvert.DeserializeObject<List<Models.Grupo>>(str);
+                grupo = obj.Where(g => g.Id == int.Parse(parameter)).Single();
             }
             else
             {

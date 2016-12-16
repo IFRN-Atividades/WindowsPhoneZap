@@ -257,8 +257,6 @@ C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\Assets\Tiles\Ic
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\Assets\Tiles\IconicTileSmall.png
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop.dll
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop.pdb
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop.dll.CodeAnalysisLog.xml
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop.dll.lastcodeanalysissucceeded
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\resources.pri
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppxManifest.xml
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop.build.appxrecipe
@@ -333,14 +331,6 @@ C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.cspro
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.pdb
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http.pri
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\qualifiers.txt
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\priconfig.xml
@@ -357,3 +347,4 @@ C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\MultipleQualifi
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\ProjectArchitectures.txt
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\XapCacheFile.xml
+C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.csprojResolveAssemblyReference.cache
