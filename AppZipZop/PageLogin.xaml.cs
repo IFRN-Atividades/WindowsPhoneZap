@@ -44,8 +44,6 @@ namespace AppZipZop
             string s = JsonConvert.SerializeObject(usuario);
             try
             {
-                
-
                 var content = new StringContent(s, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("/20131011110029/api/usuario", content);
                 //string c = await response.Content.ReadAsStringAsync();

@@ -158,10 +158,17 @@ namespace AppZipZop
                 IdAdm = (ListaUsuariosAdm.SelectedItem as Models.Usuario).Id
             };
             string s = JsonConvert.SerializeObject(g);
-            var content = new StringContent(s, Encoding.UTF8,
-                "application/json");
-            await httpClient.PostAsync("/20131011110029/api/grupousuario", content);
+            var content = new StringContent(s, Encoding.UTF8,"application/json");
+            var response = await httpClient.PostAsync("/20131011110029/api/grupousuario", content);
+
+
+            Models.RelGrupoUsuario rel = new Models.RelGrupoUsuario
+            {
+                Usuario_Id = g.IdAdm,
+                GrupoUsuario_Id = int.Parse(await response.Content.ReadAsStringAsync())
+            };
             MessageBox.Show("Acho que criou");
+
         }
 
         private async void btnEditarUsuário_Click(object sender, RoutedEventArgs e)

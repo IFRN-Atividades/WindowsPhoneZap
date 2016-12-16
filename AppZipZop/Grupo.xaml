@@ -30,13 +30,11 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
                 <Button x:Name="btnAddUser" Content="Adicionar usuário" />
-
                 <phone:LongListSelector x:Name="listaUsuárioGrupo" Grid.Row="0">
                     <phone:LongListSelector.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{Binding Nome}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
-                                <Button Content="Remover" CommandParameter="{Binding Id}" Tap="Button_Tap" />
                             </StackPanel>
                         </DataTemplate>
                     </phone:LongListSelector.ItemTemplate>
@@ -44,5 +42,4 @@
             </StackPanel>
         </Grid>
     </Grid>
-
 </phone:PhoneApplicationPage>
