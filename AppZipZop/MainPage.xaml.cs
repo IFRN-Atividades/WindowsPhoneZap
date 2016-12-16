@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -114,14 +115,14 @@ namespace AppZipZop
             var response2 = await httpClient.GetAsync("/20131011110029/api/grupousuario");
             var str2 = response2.Content.ReadAsStringAsync().Result;
             List<Models.Grupo> grupos = JsonConvert.DeserializeObject<List<Models.Grupo>>(str2);
-            //var grupinhos = (from Models.Grupo g in grupos where g.IdAdm == usuario.Id select g).ToList();
+            var grupinhos = (from Models.Grupo g in grupos where g.IdAdm == usuario.Id select g).ToList();
 
             usuarios = obj;
             listMsg.ItemsSource = obj;
             ListaUsuario.ItemsSource = obj;
             ListaUsuariosAdm.ItemsSource = obj;
 
-            //listaGruposAdministrados.ItemsSource = grupinhos;
+            listaGruposAdministrados.ItemsSource = grupinhos;
 
 
             //preencher o txtboxNomeUsuario com o nome do usuario logado
@@ -196,7 +197,7 @@ namespace AppZipZop
 
         private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/Grupo.xaml?id=" + (sender as Button).CommandParameter, UriKind.RelativeOrAbsolute));
         }
     }
 }

@@ -59,7 +59,7 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="{Binding Descricao}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
-                                    <Button Content="Users" CommandParameter="{Binding Id}" Tap="Button_Tap" />
+                                    <Button Content="Editar usuários" CommandParameter="{Binding Id}" Tap="Button_Tap" />
                                 </StackPanel>
                             </DataTemplate>
                         </phone:LongListSelector.ItemTemplate>

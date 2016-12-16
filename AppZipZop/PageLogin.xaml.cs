@@ -44,33 +44,27 @@ namespace AppZipZop
             string s = JsonConvert.SerializeObject(usuario);
             try
             {
+                
+
+                var content = new StringContent(s, Encoding.UTF8, "application/json");
+                var response = await httpClient.PostAsync("/20131011110029/api/usuario", content);
+                //string c = await response.Content.ReadAsStringAsync();
+                usuario.Id = int.Parse(await response.Content.ReadAsStringAsync());
                 using (file = IsolatedStorageFile.GetUserStoreForApplication())
                 {
                     using (filestream = file.OpenFile(arquivo, FileMode.Create))
                     {
                         xml = new XmlSerializer(typeof(Models.Usuario));
                         xml.Serialize(filestream, usuario);
-
                     }
                 }
-
-                var content = new StringContent(s, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("/20131011110029/api/usuario", content);
-                
-                //MessageBox.Show(Id.ToString());
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            /*Dispatcher.BeginInvoke(() => {
-               /* var settings = IsolatedStorageSettings.ApplicationSettings;
-                settings.Add("Nome", usuario.Nome);
-                settings.Save();
 
-                
-            });*/
         }
     }
 }
