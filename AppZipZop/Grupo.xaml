@@ -35,6 +35,7 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{Binding Nome}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
+                                <Button Content="Excluir usuário" CommandParameter="{Binding Id}"/>
                             </StackPanel>
                         </DataTemplate>
                     </phone:LongListSelector.ItemTemplate>
