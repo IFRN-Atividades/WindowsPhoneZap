@@ -49,6 +49,12 @@ namespace AppZipZop
             }
         }
 
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            getUsuarios();
+        }
+
         public async void getUsuarios()
         {
             HttpClient httpClient = new HttpClient();
@@ -62,7 +68,6 @@ namespace AppZipZop
             var response2 = await httpClient.GetAsync("/20131011110061/api/usuario");
             var str2 = response2.Content.ReadAsStringAsync().Result;
             List<Models.Usuario> obj2 = JsonConvert.DeserializeObject<List<Models.Usuario>>(str2);
-            Usuarios.ItemsSource = obj2;
 
             List<Models.Usuario> usuarioslul = new List<Models.Usuario>();
 
@@ -75,9 +80,11 @@ namespace AppZipZop
                 }
             }
 
+
+            Usuarios.ItemsSource = obj2;
             listaUsuárioGrupo.ItemsSource = usuarioslul;
             Administradores.ItemsSource = usuarioslul;
-            Administradores.SelectedItem = (from Models.Usuario u in usuarioslul where u.Id == grupo.IdAdm select u).Single()
+            //Administradores.SelectedItem = (from Models.Usuario u in usuarioslul where u.Id == grupo.IdAdm select u).Single();
         }
 
         private async void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)
@@ -86,7 +93,7 @@ namespace AppZipZop
             httpClient.BaseAddress = new Uri(ip);
 
             var response = await httpClient.DeleteAsync("/20131011110061/api/relgrupousuario/" + (sender as Button).CommandParameter.ToString());
-            getUsuarios();
+            //getUsuarios();
         }
 
         private async void btnAddUser_Click(object sender, RoutedEventArgs e)
@@ -103,7 +110,7 @@ namespace AppZipZop
             var content = new StringContent(s, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync("/20131011110061/api/relgrupousuario", content);
 
-            getUsuarios();
+            //getUsuarios();
         }
 
         private async void btnDeletarGrupo_Click(object sender, RoutedEventArgs e)

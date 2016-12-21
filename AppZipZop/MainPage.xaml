@@ -53,7 +53,7 @@
                     </phone:LongListSelector>
                 </phone:PivotItem>
 
-                <phone:PivotItem Header="Grupos">
+                <phone:PivotItem Header="Seus Grupos">
                     <phone:LongListSelector x:Name="listaGruposAdministrados" Grid.Row="0">
                         <phone:LongListSelector.ItemTemplate>
                             <DataTemplate>

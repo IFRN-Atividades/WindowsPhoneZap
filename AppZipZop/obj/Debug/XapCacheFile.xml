@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="21/12/2016 10:59:12">
-  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="21/12/2016 10:59:11" />
-  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="21/12/2016 10:59:11" />
+﻿<xapCache source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppZipZop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="21/12/2016 11:54:00">
+  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="21/12/2016 11:53:59" />
+  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll" archivePath="AppZipZop.dll" lastWriteTime="21/12/2016 11:53:58" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="16/12/2016 08:57:02" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="16/12/2016 08:57:02" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="16/12/2016 08:57:02" />
@@ -32,6 +32,6 @@
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="16/12/2016 08:57:06" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="16/12/2016 08:57:06" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="16/12/2016 10:41:39" />
-  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="21/12/2016 10:59:12" />
+  <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="21/12/2016 11:53:59" />
   <file source="C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="16/12/2016 12:27:04" />
 </xapCache>

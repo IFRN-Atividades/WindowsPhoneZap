@@ -132,21 +132,14 @@ namespace AppZipZop
                 }
             }
 
-
             usuarios = obj;
             
             ListaUsuario.ItemsSource = obj;
             ListaUsuariosAdm.ItemsSource = obj;
-
             listaGruposAdministrados.ItemsSource = grupinhos;
-
-
             ListaGrupos.ItemsSource = gruposParticipa;
-
             txtNomeUsuario.Text = usuario.Nome;
 
-
-            //preencher o txtboxNomeUsuario com o nome do usuario logado
         }
 
         private async void btnEnviarUsuario_Click(object sender, RoutedEventArgs e)
@@ -182,6 +175,7 @@ namespace AppZipZop
             var content = new StringContent(s, Encoding.UTF8,"application/json");
             var response = await httpClient.PostAsync("/20131011110061/api/grupousuario", content);
 
+            //Fazer a piruletagem para pegar o id do grupo quando criar
 
             Models.RelGrupoUsuario rel = new Models.RelGrupoUsuario
             {
@@ -194,7 +188,9 @@ namespace AppZipZop
             var response2 = await httpClient.PostAsync("/20131011110061/api/relgrupousuario", content2);
 
             MessageBox.Show("Acho que criou");
-            getDados();
+
+
+            //getDados();
 
         }
 
