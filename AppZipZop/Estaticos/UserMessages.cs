@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppZipZop.Statics
+namespace AppZipZop.Estaticos
 {
     public class UserMessages
     {

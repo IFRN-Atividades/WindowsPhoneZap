@@ -165,29 +165,10 @@ namespace AppZipZop
                 // Mensagem apresentada ao usuário
                 MessageBox.Show(msg.ToString());
                 // Atualiza lista de mensagens
-                listMsg.Items.Add(e.Collection["wp:Text1"] + ": " + e.Collection["wp:Text2"]);
+                Estaticos.UserMessages.AddMensagem(e.Collection["wp:Text1"] + ": " + e.Collection["wp:Text2"]);
             });
         }
 
-        private async void atualizarUsuario(string nome, string uri)
-        {
-            // Registra o usuário no serviço de usuários
-            string ip = "http://10.21.0.137";
-            HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(ip);
-            // Dados do usuário
-            Models.User user = new Models.User
-            {
-                Nome = nome,
-                Uri = uri
-            };
-            string s = "=" + JsonConvert.SerializeObject(user);
-            var content = new StringContent(s, Encoding.UTF8,
-                "application/x-www-form-urlencoded");
-            // Chamada ao serviço de usuários
-            await httpClient.PostAsync("/1164676/api/usuario", content);
-            MessageBox.Show("Usuário registrado");
-        }
 
     }
 }
