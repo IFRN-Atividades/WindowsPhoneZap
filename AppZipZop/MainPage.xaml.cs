@@ -124,6 +124,8 @@ namespace AppZipZop
 
             listaGruposAdministrados.ItemsSource = grupinhos;
 
+            txtNomeUsuario.Text = usuario.Nome;
+
 
             //preencher o txtboxNomeUsuario com o nome do usuario logado
         }

@@ -144,7 +144,7 @@
                         <TextBox x:Name="txtNomeUsuario" Height="83" />
 
                         <Button x:Name="btnEditarUsuário" Content="Editar perfil" Click="btnEditarUsuário_Click" />
-                        <Button x:Name="btnDeletarUsuário" Content="Deltar perfil" Click="btnDeletarUsuário_Click" />
+                        <Button x:Name="btnDeletarUsuário" Content="Deletar perfil" Click="btnDeletarUsuário_Click" />
 
                     </StackPanel>
                 </phone:PivotItem>
