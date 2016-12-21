@@ -175,6 +175,7 @@ namespace AppZipZop
             var response2 = await httpClient.PostAsync("/20131011110029/api/relgrupousuario", content2);
 
             MessageBox.Show("Acho que criou");
+            getDados();
 
         }
 

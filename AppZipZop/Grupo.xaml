@@ -24,38 +24,55 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Zip Zop" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Grupo" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <StackPanel>
 
-                <toolkit:ListPicker x:Name="Usuarios" Margin="10,0">
-                    <toolkit:ListPicker.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Nome}" />
-                        </DataTemplate>
-                    </toolkit:ListPicker.ItemTemplate>
-                    <toolkit:ListPicker.FullModeItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Nome}" FontSize="20" />
-                        </DataTemplate>
-                    </toolkit:ListPicker.FullModeItemTemplate>
-                </toolkit:ListPicker>
+            <phone:Pivot Margin="-10,-50,10,10">
 
-                <Button x:Name="btnAddUser" Content="Adicionar usuário" Click="btnAddUser_Click" />
-                <phone:LongListSelector x:Name="listaUsuárioGrupo" Grid.Row="0">
-                    <phone:LongListSelector.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Nome}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
-                                <Button Content="Excluir usuário" CommandParameter="{Binding Id}" Tap="Button_Tap"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </phone:LongListSelector.ItemTemplate>
-                </phone:LongListSelector>
-            </StackPanel>
+                <phone:PivotItem Header="Editar Grupo">
+                    <StackPanel>
+                        <TextBlock Text="Descricao" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtDescricao" Height="83" />
+
+                        <Button x:Name="btnEditarGrupo" Content="Editar grupo" Click="btnEditarGrupo_Click"  />
+                        <Button x:Name="btnDeletarGrupo" Content="Deletar grupo" Click="btnDeletarGrupo_Click"  />
+
+                    </StackPanel>
+
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Usuários">
+                    <StackPanel>
+                        <toolkit:ListPicker x:Name="Usuarios" Margin="10,0">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+
+                        <Button x:Name="btnAddUser" Content="Adicionar usuário" Click="btnAddUser_Click" />
+                        <phone:LongListSelector x:Name="listaUsuárioGrupo" Grid.Row="0">
+                            <phone:LongListSelector.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Nome}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
+                                        <Button Content="Excluir usuário" CommandParameter="{Binding Id}" Tap="Button_Tap"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </phone:LongListSelector.ItemTemplate>
+                        </phone:LongListSelector>
+                    </StackPanel>
+                </phone:PivotItem>
+
+            </phone:Pivot>
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

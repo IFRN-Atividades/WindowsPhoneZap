@@ -39,6 +39,7 @@ namespace AppZipZop
                 List<Models.Grupo> obj = JsonConvert.DeserializeObject<List<Models.Grupo>>(str);
                 grupo = obj.Where(g => g.Id == int.Parse(parameter)).Single();
 
+                txtDescricao.Text = grupo.Descricao;
 
                 getUsuarios();
             }
@@ -91,5 +92,33 @@ namespace AppZipZop
             var response = await httpClient.PostAsync("/20131011110029/api/relgrupousuario", content);
         }
 
+        private async void btnDeletarGrupo_Click(object sender, RoutedEventArgs e)
+        {
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(ip);
+            await httpClient.DeleteAsync("/20131011110029/api/grupousuario/" + grupo.Id);
+            MessageBox.Show("Acho que Deletou");
+
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private async void btnEditarGrupo_Click(object sender, RoutedEventArgs e)
+        {
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(ip);
+
+            var response = await httpClient.GetAsync("/20131011110029/api/grupousuario");
+            var str = response.Content.ReadAsStringAsync().Result;
+            List<Models.Grupo> obj = JsonConvert.DeserializeObject<List<Models.Grupo>>(str);
+
+            Models.Grupo u = (from Models.Grupo g in obj where g.Id == grupo.Id select g).Single();
+            u.Descricao = txtDescricao.Text;
+
+            string s = JsonConvert.SerializeObject(u);
+            var content = new StringContent(s, Encoding.UTF8,
+                "application/json");
+            await httpClient.PutAsync("/20131011110029/api/grupousuario/" + grupo.Id, content);
+            MessageBox.Show("Acho que editou");
+        }
     }
 }
