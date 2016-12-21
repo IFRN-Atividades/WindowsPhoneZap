@@ -107,16 +107,16 @@ namespace AppZipZop
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ip);
 
-            var response = await httpClient.GetAsync("/20131011110029/api/usuario");
+            var response = await httpClient.GetAsync("/20131011110061/api/usuario");
             var str = response.Content.ReadAsStringAsync().Result;
             List<Models.Usuario> obj = JsonConvert.DeserializeObject<List<Models.Usuario>>(str);
 
-            var response2 = await httpClient.GetAsync("/20131011110029/api/grupousuario");
+            var response2 = await httpClient.GetAsync("/20131011110061/api/grupousuario");
             var str2 = response2.Content.ReadAsStringAsync().Result;
             List<Models.Grupo> grupos = JsonConvert.DeserializeObject<List<Models.Grupo>>(str2);
             var grupinhos = (from Models.Grupo g in grupos where g.IdAdm == usuario.Id select g).ToList();
 
-            var response3 = await httpClient.GetAsync("/20131011110029/api/relgrupousuario");
+            var response3 = await httpClient.GetAsync("/20131011110061/api/relgrupousuario");
             var str3 = response3.Content.ReadAsStringAsync().Result;
             List<Models.RelGrupoUsuario> relGrupo = JsonConvert.DeserializeObject<List<Models.RelGrupoUsuario>>(str3);
             var gP = (from Models.RelGrupoUsuario y in relGrupo where y.Usuario_Id == usuario.Id select y).ToList();
@@ -164,7 +164,7 @@ namespace AppZipZop
             string s = "=" + JsonConvert.SerializeObject(m);
             var content = new StringContent(s, Encoding.UTF8,
                 "application/json");
-            await httpClient.PostAsync("/20131011110029/api/mensagem", content);
+            await httpClient.PostAsync("/20131011110061/api/mensagem", content);
             MessageBox.Show("Acho que enviou");
         }
 
@@ -180,7 +180,7 @@ namespace AppZipZop
             };
             string s = JsonConvert.SerializeObject(g);
             var content = new StringContent(s, Encoding.UTF8,"application/json");
-            var response = await httpClient.PostAsync("/20131011110029/api/grupousuario", content);
+            var response = await httpClient.PostAsync("/20131011110061/api/grupousuario", content);
 
 
             Models.RelGrupoUsuario rel = new Models.RelGrupoUsuario
@@ -191,7 +191,7 @@ namespace AppZipZop
 
             string s2 = JsonConvert.SerializeObject(rel);
             var content2 = new StringContent(s2, Encoding.UTF8, "application/json");
-            var response2 = await httpClient.PostAsync("/20131011110029/api/relgrupousuario", content2);
+            var response2 = await httpClient.PostAsync("/20131011110061/api/relgrupousuario", content2);
 
             MessageBox.Show("Acho que criou");
             getDados();
@@ -203,7 +203,7 @@ namespace AppZipZop
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ip);
 
-            var response = await httpClient.GetAsync("/20131011110029/api/usuario");
+            var response = await httpClient.GetAsync("/20131011110061/api/usuario");
             var str = response.Content.ReadAsStringAsync().Result;
             List<Models.Usuario> obj = JsonConvert.DeserializeObject<List<Models.Usuario>>(str);
 
@@ -213,7 +213,7 @@ namespace AppZipZop
             string s = JsonConvert.SerializeObject(u);
             var content = new StringContent(s, Encoding.UTF8,
                 "application/json");
-            await httpClient.PutAsync("/20131011110029/api/usuario/" + usuario.Id, content);
+            await httpClient.PutAsync("/20131011110061/api/usuario/" + usuario.Id, content);
             MessageBox.Show("Acho que editou");
         }
 
@@ -221,7 +221,7 @@ namespace AppZipZop
         {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ip);
-            await httpClient.DeleteAsync("/20131011110029/api/usuario/" + usuario.Id);
+            await httpClient.DeleteAsync("/20131011110061/api/usuario/" + usuario.Id);
             MessageBox.Show("Acho que Deletou");
 
             IsolatedStorageFile.GetUserStoreForApplication().Remove();

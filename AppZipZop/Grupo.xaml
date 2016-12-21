@@ -30,19 +30,6 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 
             <phone:Pivot Margin="-10,-50,10,10">
-
-                <phone:PivotItem Header="Editar Grupo">
-                    <StackPanel>
-                        <TextBlock Text="Descricao" Style="{StaticResource PhoneTextBlockBase}" />
-                        <TextBox x:Name="txtDescricao" Height="83" />
-
-                        <Button x:Name="btnEditarGrupo" Content="Editar grupo" Click="btnEditarGrupo_Click"  />
-                        <Button x:Name="btnDeletarGrupo" Content="Deletar grupo" Click="btnDeletarGrupo_Click"  />
-
-                    </StackPanel>
-
-                </phone:PivotItem>
-
                 <phone:PivotItem Header="Usuários">
                     <StackPanel>
                         <toolkit:ListPicker x:Name="Usuarios" Margin="10,0">
@@ -69,9 +56,22 @@
                                 </DataTemplate>
                             </phone:LongListSelector.ItemTemplate>
                         </phone:LongListSelector>
+                        
+                        
                     </StackPanel>
                 </phone:PivotItem>
 
+                <phone:PivotItem Header="Editar Grupo">
+                    <StackPanel>
+                        <TextBlock Text="Descricao" Style="{StaticResource PhoneTextBlockBase}" />
+                        <TextBox x:Name="txtDescricao" Height="83" />
+
+                        <Button x:Name="btnEditarGrupo" Content="Editar grupo" Click="btnEditarGrupo_Click"  />
+                        <Button x:Name="btnDeletarGrupo" Content="Deletar grupo" Click="btnDeletarGrupo_Click"  />
+
+                    </StackPanel>
+
+                </phone:PivotItem>
             </phone:Pivot>
         </Grid>
     </Grid>
