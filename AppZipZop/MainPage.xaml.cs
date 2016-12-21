@@ -145,16 +145,16 @@ namespace AppZipZop
         private async void btnEnviarUsuario_Click(object sender, RoutedEventArgs e)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(ip);
+            httpClient.BaseAddress = new Uri(ip);   
 
             Models.Mensagem m = new Models.Mensagem
             {
                 Uri = (ListaUsuario.SelectedItem as Models.Usuario).Uri,
                 Texto1 = txtTituloUsuario.Text,
-                Texto2 = txtTituloGrupo.Text,
+                Texto2 = txtMensagemUsuario.Text,
                 Param = "MainPage.xaml"
             };
-            string s = "=" + JsonConvert.SerializeObject(m);
+            string s = JsonConvert.SerializeObject(m);
             var content = new StringContent(s, Encoding.UTF8,
                 "application/json");
             await httpClient.PostAsync("/20131011110061/api/mensagem", content);

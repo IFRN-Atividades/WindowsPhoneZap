@@ -32,7 +32,7 @@ namespace AppZipZop
             InitializeComponent();
         }
 
-        private string channelName = "channelZipZoppere";
+        private string channelName = "channelIfrn";
 
         private async void cadastrarUsuario(string nome, string uri)
         {

@@ -8,7 +8,7 @@ namespace AppZipZop.Estaticos
 {
     public class UserMessages
     {
-        private static List<string> mensagens;
+        private static List<string> mensagens = new List<string>();
 
         public static void AddMensagem(string m)
         {
