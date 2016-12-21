@@ -102,12 +102,12 @@
                         <toolkit:ListPicker x:Name="ListaGrupos" Margin="10,0">
                             <toolkit:ListPicker.ItemTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding Nome}" />
+                                    <TextBlock Text="{Binding Descricao}" />
                                 </DataTemplate>
                             </toolkit:ListPicker.ItemTemplate>
                             <toolkit:ListPicker.FullModeItemTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                    <TextBlock Text="{Binding Descricao}" FontSize="20" />
                                 </DataTemplate>
                             </toolkit:ListPicker.FullModeItemTemplate>
                         </toolkit:ListPicker>

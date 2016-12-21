@@ -100,7 +100,6 @@ namespace AppZipZop
         //}
 
 
-
         List<Models.Usuario> usuarios = new List<Models.Usuario>();
 
         public async void getDados()
@@ -117,12 +116,32 @@ namespace AppZipZop
             List<Models.Grupo> grupos = JsonConvert.DeserializeObject<List<Models.Grupo>>(str2);
             var grupinhos = (from Models.Grupo g in grupos where g.IdAdm == usuario.Id select g).ToList();
 
+            var response3 = await httpClient.GetAsync("/20131011110029/api/relgrupousuario");
+            var str3 = response3.Content.ReadAsStringAsync().Result;
+            List<Models.RelGrupoUsuario> relGrupo = JsonConvert.DeserializeObject<List<Models.RelGrupoUsuario>>(str3);
+            var gP = (from Models.RelGrupoUsuario y in relGrupo where y.Usuario_Id == usuario.Id select y).ToList();
+
+            List<Models.Grupo> gruposParticipa = new List<Models.Grupo>();
+
+            foreach(Models.RelGrupoUsuario tu in gP)
+            {
+                foreach (Models.Grupo xu in grupos)
+                {
+                    if (tu.GrupoUsuario_Id == xu.Id)
+                        gruposParticipa.Add(xu);
+                }
+            }
+
+
             usuarios = obj;
-            listMsg.ItemsSource = obj;
+            
             ListaUsuario.ItemsSource = obj;
             ListaUsuariosAdm.ItemsSource = obj;
 
             listaGruposAdministrados.ItemsSource = grupinhos;
+
+
+            ListaGrupos.ItemsSource = gruposParticipa;
 
             txtNomeUsuario.Text = usuario.Nome;
 
@@ -205,7 +224,7 @@ namespace AppZipZop
             await httpClient.DeleteAsync("/20131011110029/api/usuario/" + usuario.Id);
             MessageBox.Show("Acho que Deletou");
 
-            //Limpar os dados do usuário do celular
+            IsolatedStorageFile.GetUserStoreForApplication().Remove();
 
             NavigationService.Navigate(new Uri("/PageLogin.xaml", UriKind.Relative));
         }

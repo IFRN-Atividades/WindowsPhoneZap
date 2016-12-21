@@ -348,11 +348,3 @@ C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\ProjectArchitec
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\XapCacheFile.xml
 C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.csprojResolveAssemblyReference.cache
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
-C:\Users\navi\Desktop\gilson\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate
