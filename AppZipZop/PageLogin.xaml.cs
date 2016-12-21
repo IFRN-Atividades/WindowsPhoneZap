@@ -14,6 +14,7 @@ using Microsoft.Phone.Notification;
 using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
 using System.IO;
+using System.Xml;
 
 namespace AppZipZop
 {
@@ -23,12 +24,59 @@ namespace AppZipZop
 
         private IsolatedStorageFile file;
         private IsolatedStorageFileStream filestream;
+        private XmlReader xmlReader;
         private XmlSerializer xml;
 
+        private Models.Mensagens mensagens = new Models.Mensagens();
+
         private string arquivo = "UsuarioDados.xml";
+        private string arquivomensagem = "UsuarioMensagens.xml";
+
+        public void saveMessageToFile(string txt1, string txt2)
+        {
+            Models.Mensagem m = new Models.Mensagem
+            {
+                Texto1 = txt1,
+                Texto2 = txt2
+            };
+            using (file = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                xml = new XmlSerializer(typeof(Models.Mensagens));
+                bool existe = file.FileExists(arquivomensagem);
+
+                using (filestream = file.OpenFile(arquivomensagem, FileMode.OpenOrCreate))
+                {
+                    if (!existe)
+                        using (var writer = XmlWriter.Create(filestream))
+                            xml.Serialize(writer, new Models.Mensagens());
+
+                    filestream.Seek(0, SeekOrigin.Begin);
+
+                    using (xmlReader = XmlReader.Create(filestream)) {
+                        foreach (Models.Mensagem emi in (Models.Mensagens)xml.Deserialize(filestream))
+                        {
+                            mensagens.Add(emi);
+                        }
+
+                        mensagens.Add(m);
+                        xml.Serialize(filestream, mensagens);
+                    }
+                }
+            }
+        }
+
+        public bool checkIfMessageFileExists()
+        {
+            using (file = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                if (!file.FileExists(arquivomensagem)) return false;
+            }
+            return true;
+        }
 
         public PageLogin()
         {
+
             InitializeComponent();
         }
 
@@ -165,9 +213,11 @@ namespace AppZipZop
                 // Mensagem apresentada ao usuário
                 MessageBox.Show(msg.ToString());
                 // Atualiza lista de mensagens
-                Estaticos.UserMessages.AddMensagem(e.Collection["wp:Text1"] + ": " + e.Collection["wp:Text2"]);
+                saveMessageToFile(e.Collection["wp:Text1"], e.Collection["wp:Text2"]);
+                
             });
         }
+       
 
 
     }

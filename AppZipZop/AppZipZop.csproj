@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Models\Grupo.cs" />
     <Compile Include="Models\Mensagem.cs" />
+    <Compile Include="Models\Mensagens.cs" />
     <Compile Include="Models\RelGrupoUsuario.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="PageLogin.xaml.cs">
@@ -114,7 +115,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Estaticos\UserMessages.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -207,6 +207,9 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Estaticos\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

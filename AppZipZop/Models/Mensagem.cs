@@ -13,5 +13,7 @@ namespace AppZipZop.Models
         public string Texto2 { get; set; }
 
         public string Param { get; set; }
+
+        
     }
 }

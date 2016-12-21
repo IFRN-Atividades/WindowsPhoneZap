@@ -23,6 +23,7 @@ namespace AppZipZop
         /// </summary>
         public App()
         {
+
             // Global handler for uncaught exceptions.
             UnhandledException += Application_UnhandledException;
 

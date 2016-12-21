@@ -15,6 +15,7 @@ using System.Text;
 using System.IO;
 using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
+using System.Xml;
 
 namespace AppZipZop
 {
@@ -26,12 +27,14 @@ namespace AppZipZop
         private IsolatedStorageFileStream filestream;
         private XmlSerializer xml;
         private Models.Usuario usuario;
-
+        private Models.Mensagens mensagens = new Models.Mensagens();
         private string arquivo = "UsuarioDados.xml";
+        private string arquivomensagem = "UsuarioMensagens.xml";
 
         // Constructor
         public MainPage()
         {
+            
             InitializeComponent();
             
             Loaded += (s, e) =>
@@ -43,10 +46,18 @@ namespace AppZipZop
                 else
                 {
                     abrirArquivo();
-                   // getDados();
+                    
                 }
             };
             if (checkifUserExists()) getDados();
+            if (checkifUserHasMessages())
+            {
+                
+                abrirArquivoMensagens();
+                listMsg.ItemsSource = mensagens;
+            }
+                
+            
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
@@ -54,12 +65,32 @@ namespace AppZipZop
 
         private void abrirArquivo()
         {
-            using (file = IsolatedStorageFile.GetUserStoreForApplication())
+            using (var store = IsolatedStorageFile.GetUserStoreForApplication())
+            using (filestream = store.OpenFile(arquivo, FileMode.Open))
             {
-                using (filestream = file.OpenFile(arquivo, FileMode.Open))
+                xml = new XmlSerializer(typeof(Models.Usuario));
+                usuario = (Models.Usuario)xml.Deserialize(filestream);
+            }
+        }
+
+        private void abrirArquivoMensagens()
+        {
+            xml = new XmlSerializer(typeof(Models.Mensagem));
+
+            using (var store = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                bool existe = store.FileExists(arquivomensagem);
+
+                using (filestream = store.OpenFile(arquivomensagem, FileMode.OpenOrCreate))
                 {
-                    xml = new XmlSerializer(typeof(Models.Usuario));
-                    usuario = (Models.Usuario)xml.Deserialize(filestream);
+                    if (!existe)
+                        using (var writer = XmlWriter.Create(filestream))
+                            xml.Serialize(writer, new Models.Mensagens());
+                    else
+                    {
+                        mensagens = (Models.Mensagens)xml.Deserialize(filestream);
+                        listMsg.ItemsSource = mensagens;
+                    }
                 }
             }
         }
@@ -69,6 +100,15 @@ namespace AppZipZop
             using (file = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 if (!file.FileExists(arquivo)) return false;
+            }
+            return true;
+        }
+
+        private bool checkifUserHasMessages()
+        {
+            using (file = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                if (!file.FileExists(arquivomensagem)) return false;
             }
             return true;
         }
