@@ -66,6 +66,21 @@
                         <TextBlock Text="Descricao" Style="{StaticResource PhoneTextBlockBase}" />
                         <TextBox x:Name="txtDescricao" Height="83" />
 
+                        <TextBlock Text="Administrador" Style="{StaticResource PhoneTextBlockBase}" />
+                        
+                        <toolkit:ListPicker x:Name="Administradores" Margin="10,0">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Nome}" FontSize="20" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+
                         <Button x:Name="btnEditarGrupo" Content="Editar grupo" Click="btnEditarGrupo_Click"  />
                         <Button x:Name="btnDeletarGrupo" Content="Deletar grupo" Click="btnDeletarGrupo_Click"  />
 
