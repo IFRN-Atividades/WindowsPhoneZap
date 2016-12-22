@@ -26,17 +26,17 @@ namespace AppZipZop
     {
         private string ip = "http://10.21.0.137/";
 
-        private IsolatedStorageFile file;
-        private IsolatedStorageFileStream filestream;
+        //private IsolatedStorageFile file;
+        //private IsolatedStorageFileStream filestream;
         //private XmlReader xmlReader;
-        private XmlSerializer xml;
+        //private XmlSerializer xml;
 
-        private Models.Mensagens mensagens = new Models.Mensagens();
+        //private Models.Mensagens mensagens = new Models.Mensagens();
 
-        private string arquivo = "UsuarioDados.xml";
-        private string arquivomensagem = "UsuarioMensagens.xml";
+        //private string arquivo = "UsuarioDados.xml";
+        //private string arquivomensagem = "UsuarioMensagens.xml";
 
-        public async void saveMessageToFile(string txt1, string txt2)
+        /*public async void saveMessageToFile(string txt1, string txt2)
         {
             Models.Mensagem m = new Models.Mensagem
             {
@@ -97,7 +97,7 @@ namespace AppZipZop
                 if (!file.FileExists(arquivomensagem)) return false;
             }
             return true;
-        }
+        }*/
 
         public PageLogin()
         {
@@ -124,14 +124,14 @@ namespace AppZipZop
                 var response = await httpClient.PostAsync("/20131011110061/api/usuario", content);
                 //string c = await response.Content.ReadAsStringAsync();
                 usuario.Id = int.Parse(await response.Content.ReadAsStringAsync());
-                using (file = IsolatedStorageFile.GetUserStoreForApplication())
+                /*using (file = IsolatedStorageFile.GetUserStoreForApplication())
                 {
                     using (filestream = file.OpenFile(arquivo, FileMode.Create))
                     {
                         xml = new XmlSerializer(typeof(Models.Usuario));
                         xml.Serialize(filestream, usuario);
                     }
-                }
+                }*/
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             catch (Exception ex)
@@ -238,8 +238,17 @@ namespace AppZipZop
                 // Mensagem apresentada ao usuário
                 MessageBox.Show(msg.ToString());
                 // Atualiza lista de mensagens
-                saveMessageToFile(e.Collection["wp:Text1"], e.Collection["wp:Text2"]);
-                
+                //saveMessageToFile(e.Collection["wp:Text1"], e.Collection["wp:Text2"]);
+                using (var dct = new bancoContext(bancoContext.ConnectionString))
+                {
+                    dct.CreateIfNotExists();
+                    dct.Mensagem.InsertOnSubmit(new Mensagem
+                    {
+                        Texto1 = e.Collection["wp:Text1"],
+                        Texto2 = e.Collection["wp:Text2"]
+                    });
+                    dct.SubmitChanges();
+                }
             });
         }
        

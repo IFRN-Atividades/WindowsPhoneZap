@@ -94,6 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="bancoContext.cs" />
     <Compile Include="Grupo.xaml.cs">
       <DependentUpon>Grupo.xaml</DependentUpon>
     </Compile>
