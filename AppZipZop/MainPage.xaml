@@ -119,7 +119,7 @@
                             </toolkit:ListPicker.FullModeItemTemplate>
                         </toolkit:ListPicker>
 
-                        <Button x:Name="btnEnviarGrupo" Content="Enviar" />
+                        <Button x:Name="btnEnviarGrupo" Content="Enviar" Click="btnEnviarGrupo_Click" />
                     </StackPanel>
                 </phone:PivotItem>
 

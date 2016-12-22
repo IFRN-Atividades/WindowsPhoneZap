@@ -303,6 +303,23 @@ namespace AppZipZop
             NavigationService.Navigate(new Uri("/Grupo.xaml?id=" + (sender as Button).CommandParameter, UriKind.RelativeOrAbsolute));
         }
 
-        
+        private async void btnEnviarGrupo_Click(object sender, RoutedEventArgs e)
+        {
+
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(ip);
+
+            Models.Mensagem m = new Models.Mensagem
+            {
+                Texto1 = txtTituloUsuario.Text,
+                Texto2 = txtMensagemUsuario.Text,
+                Param = "MainPage.xaml"
+            };
+            string s = JsonConvert.SerializeObject(m);
+            var content = new StringContent(s, Encoding.UTF8,
+                "application/json");
+            await httpClient.PostAsync("/20131011110061/api/mensagemgrupo/" + (ListaGrupos.SelectedItem as Models.Grupo).Id, content);
+            MessageBox.Show("Acho que enviou");
+        }
     }
 }

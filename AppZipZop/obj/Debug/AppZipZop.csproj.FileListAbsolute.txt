@@ -439,14 +439,6 @@ C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.cspr
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.dll
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\AppZipZop.pdb
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
-C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http.pri
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\qualifiers.txt
 C:\Users\Nudes\workspace\ifrn\WindowsPhoneZap\AppZipZop\obj\Debug\priconfig.xml
