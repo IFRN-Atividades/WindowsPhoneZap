@@ -15,6 +15,10 @@ using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
 using System.IO;
 using System.Xml;
+using System.Runtime.Serialization;
+using System.Collections.ObjectModel;
+using Windows.Storage;
+using Windows.Storage.Streams;
 
 namespace AppZipZop
 {
@@ -24,7 +28,7 @@ namespace AppZipZop
 
         private IsolatedStorageFile file;
         private IsolatedStorageFileStream filestream;
-        private XmlReader xmlReader;
+        //private XmlReader xmlReader;
         private XmlSerializer xml;
 
         private Models.Mensagens mensagens = new Models.Mensagens();
@@ -32,37 +36,58 @@ namespace AppZipZop
         private string arquivo = "UsuarioDados.xml";
         private string arquivomensagem = "UsuarioMensagens.xml";
 
-        public void saveMessageToFile(string txt1, string txt2)
+        public async void saveMessageToFile(string txt1, string txt2)
         {
             Models.Mensagem m = new Models.Mensagem
             {
                 Texto1 = txt1,
                 Texto2 = txt2
             };
-            using (file = IsolatedStorageFile.GetUserStoreForApplication())
+
+            MemoryStream sessionData = new MemoryStream();
+
+            if (!new FileInfo(ApplicationData.Current.LocalFolder.Path + "/" + arquivomensagem).Exists)
             {
-                xml = new XmlSerializer(typeof(Models.Mensagens));
-                bool existe = file.FileExists(arquivomensagem);
+                DataContractSerializer serializer = new
+                            DataContractSerializer(typeof(Models.Mensagens));
+                serializer.WriteObject(sessionData, new Models.Mensagens());
 
-                using (filestream = file.OpenFile(arquivomensagem, FileMode.OpenOrCreate))
+                StorageFile f = await ApplicationData.Current.LocalFolder
+                                         .CreateFileAsync(arquivomensagem);
+
+                using (Stream fileStream = await f.OpenStreamForWriteAsync())
                 {
-                    if (!existe)
-                        using (var writer = XmlWriter.Create(filestream))
-                            xml.Serialize(writer, new Models.Mensagens());
-
-                    filestream.Seek(0, SeekOrigin.Begin);
-
-                    using (xmlReader = XmlReader.Create(filestream)) {
-                        foreach (Models.Mensagem emi in (Models.Mensagens)xml.Deserialize(filestream))
-                        {
-                            mensagens.Add(emi);
-                        }
-
-                        mensagens.Add(m);
-                        xml.Serialize(filestream, mensagens);
-                    }
+                    sessionData.Seek(0, SeekOrigin.Begin);
+                    await sessionData.CopyToAsync(fileStream);
+                    await fileStream.FlushAsync();
                 }
             }
+
+            else
+            {
+                StorageFile f = await ApplicationData.Current.LocalFolder.
+                                GetFileAsync(arquivomensagem);
+
+                DataContractSerializer serializer =
+                            new DataContractSerializer(typeof(Models.Mensagens));
+                using (IInputStream inStream = await f.OpenSequentialReadAsync())
+                {
+                   
+                    mensagens = (Models.Mensagens)serializer
+                                     .ReadObject(inStream.AsStreamForRead());
+                }
+                mensagens.Add(m);
+                serializer.WriteObject(sessionData, mensagens);
+                
+
+                using (Stream fileStream = await f.OpenStreamForWriteAsync())
+                {
+                    sessionData.Seek(0, SeekOrigin.Begin);
+                    await sessionData.CopyToAsync(fileStream);
+                    await fileStream.FlushAsync();
+                }
+            }
+   
         }
 
         public bool checkIfMessageFileExists()

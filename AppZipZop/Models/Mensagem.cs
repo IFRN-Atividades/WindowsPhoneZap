@@ -14,6 +14,11 @@ namespace AppZipZop.Models
 
         public string Param { get; set; }
 
-        
+        public override string ToString()
+        {
+            return $"{Texto1} - {Texto2}";
+        }
+
+
     }
 }

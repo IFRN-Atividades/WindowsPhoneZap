@@ -16,6 +16,10 @@ using System.IO;
 using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
 using System.Xml;
+using Windows.Storage;
+using Windows.Storage.Streams;
+using System.Runtime.Serialization;
+using System.Collections.ObjectModel;
 
 namespace AppZipZop
 {
@@ -36,7 +40,8 @@ namespace AppZipZop
         {
             
             InitializeComponent();
-            
+            listMsg.ItemsSource = mensagens;
+
             Loaded += (s, e) =>
             {
                 if (!checkifUserExists())
@@ -54,7 +59,7 @@ namespace AppZipZop
             {
                 
                 abrirArquivoMensagens();
-                listMsg.ItemsSource = mensagens;
+                
             }
                 
             
@@ -73,25 +78,42 @@ namespace AppZipZop
             }
         }
 
-        private void abrirArquivoMensagens()
+        private async void abrirArquivoMensagens()
         {
-            xml = new XmlSerializer(typeof(Models.Mensagem));
-
-            using (var store = IsolatedStorageFile.GetUserStoreForApplication())
+            if (!new FileInfo(ApplicationData.Current.LocalFolder.Path + "/" + arquivomensagem).Exists)
             {
-                bool existe = store.FileExists(arquivomensagem);
+                MemoryStream sessionData = new MemoryStream();
+                DataContractSerializer serializer = new
+                            DataContractSerializer(typeof(Models.Mensagens));
+                serializer.WriteObject(sessionData, new Models.Mensagens());
 
-                using (filestream = store.OpenFile(arquivomensagem, FileMode.OpenOrCreate))
+                StorageFile f = await ApplicationData.Current.LocalFolder
+                                         .CreateFileAsync(arquivomensagem);
+
+                using (Stream fileStream = await f.OpenStreamForWriteAsync())
                 {
-                    if (!existe)
-                        using (var writer = XmlWriter.Create(filestream))
-                            xml.Serialize(writer, new Models.Mensagens());
-                    else
+                    sessionData.Seek(0, SeekOrigin.Begin);
+                    await sessionData.CopyToAsync(fileStream);
+                    await fileStream.FlushAsync();
+                }
+            }
+            else
+            {
+                StorageFile file = await ApplicationData.Current.LocalFolder.
+                                GetFileAsync(arquivomensagem);
+                using (IInputStream inStream = await file.OpenSequentialReadAsync())
+                {
+                    DataContractSerializer serializer =
+                            new DataContractSerializer(typeof(Models.Mensagens));
+                    var data = (Models.Mensagens)serializer
+                                     .ReadObject(inStream.AsStreamForRead());
+                    foreach (Models.Mensagem z in data)
                     {
-                        mensagens = (Models.Mensagens)xml.Deserialize(filestream);
-                        listMsg.ItemsSource = mensagens;
+                        mensagens.Add(z);
                     }
                 }
+
+                
             }
         }
 
@@ -118,6 +140,7 @@ namespace AppZipZop
             // Notificação recebida com o aplicativo fechado
             // Este método é chamado e os dados vem na QueryString
             var dic = NavigationContext.QueryString;
+            
             // Atualiza lista de mensagens
             //if (dic.ContainsKey("Msg1")) listMsg.Items.Add(dic["Msg1"]);
             //if (dic.ContainsKey("Msg2")) listMsg.Items.Add(dic["Msg2"]);
@@ -269,5 +292,7 @@ namespace AppZipZop
         {
             NavigationService.Navigate(new Uri("/Grupo.xaml?id=" + (sender as Button).CommandParameter, UriKind.RelativeOrAbsolute));
         }
+
+        
     }
 }

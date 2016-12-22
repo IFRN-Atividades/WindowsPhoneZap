@@ -1,1 +1,1 @@
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\AppZipZop.csproj;neutral
+C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\AppZipZop.csproj;neutral
