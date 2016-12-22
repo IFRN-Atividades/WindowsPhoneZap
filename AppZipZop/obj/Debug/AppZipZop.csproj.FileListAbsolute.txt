@@ -554,14 +554,6 @@ C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\Multiple
 C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\ProjectArchitectures.txt
 C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml
 C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\XapCacheFile.xml
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
-C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\Bin\Debug\Assets\ApplicationIcon.png
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -661,3 +653,11 @@ C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\MultipleQualifi
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\ProjectArchitectures.txt
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\MDILProjectFiles.xml
 C:\Users\navi\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\XapCacheFile.xml
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\layout.resfiles.intermediate
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\pri.resfiles.intermediate
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml
+C:\Users\Luis Felipe\Desktop\daniel\WindowsPhoneZap\AppZipZop\obj\Debug\System.Net.Http\priconfig.xml.intermediate

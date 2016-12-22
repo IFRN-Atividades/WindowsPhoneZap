@@ -150,7 +150,18 @@ namespace AppZipZop
             // Notificação recebida com o aplicativo fechado
             // Este método é chamado e os dados vem na QueryString
             var dic = NavigationContext.QueryString;
-            
+
+            Mensagem mens = new Mensagem();
+            if (dic.ContainsKey("Msg1") && dic.ContainsKey("Msg2"))
+            using (var dtc = new bancoContext(bancoContext.ConnectionString))
+            {
+                dtc.Mensagem.InsertOnSubmit(new Mensagem {
+                    Texto1 = dic["Msg1"],
+                    Texto2 = dic["Msg2"]
+                });
+                dtc.SubmitChanges();
+            }
+
             // Atualiza lista de mensagens
             //if (dic.ContainsKey("Msg1")) listMsg.Items.Add(dic["Msg1"]);
             //if (dic.ContainsKey("Msg2")) listMsg.Items.Add(dic["Msg2"]);
@@ -311,14 +322,16 @@ namespace AppZipZop
 
             Models.Mensagem m = new Models.Mensagem
             {
-                Texto1 = txtTituloUsuario.Text,
-                Texto2 = txtMensagemUsuario.Text,
+                Texto1 = txtTituloGrupo.Text,
+                Texto2 = txtMensagemGrupo.Text,
                 Param = "MainPage.xaml"
             };
             string s = JsonConvert.SerializeObject(m);
             var content = new StringContent(s, Encoding.UTF8,
                 "application/json");
-            await httpClient.PostAsync("/20131011110061/api/mensagemgrupo/" + (ListaGrupos.SelectedItem as Models.Grupo).Id, content);
+            var id = (ListaGrupos.SelectedItem as Models.Grupo).Id;
+            var str  = "/20131011110061/api/mensagemgrupo/" + id;
+            await httpClient.PostAsync(str, content);
             MessageBox.Show("Acho que enviou");
         }
     }
