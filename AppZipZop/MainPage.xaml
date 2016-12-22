@@ -49,7 +49,14 @@
             <phone:Pivot Margin="-10,-50,10,10">
                 <phone:PivotItem Header="Mensagens">
                     <phone:LongListSelector x:Name="listMsg">
-                        
+                        <phone:LongListSelector.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Texto1}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
+                                    <TextBlock Text="{Binding Texto2}" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle2Style}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </phone:LongListSelector.ItemTemplate>
                     </phone:LongListSelector>
                 </phone:PivotItem>
 

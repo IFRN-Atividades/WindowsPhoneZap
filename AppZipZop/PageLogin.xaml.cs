@@ -26,14 +26,14 @@ namespace AppZipZop
     {
         private string ip = "http://10.21.0.137/";
 
-        //private IsolatedStorageFile file;
-        //private IsolatedStorageFileStream filestream;
-        //private XmlReader xmlReader;
-        //private XmlSerializer xml;
+        private IsolatedStorageFile file;
+        private IsolatedStorageFileStream filestream;
+        private XmlReader xmlReader;
+        private XmlSerializer xml;
 
         //private Models.Mensagens mensagens = new Models.Mensagens();
 
-        //private string arquivo = "UsuarioDados.xml";
+        private string arquivo = "UsuarioDados.xml";
         //private string arquivomensagem = "UsuarioMensagens.xml";
 
         /*public async void saveMessageToFile(string txt1, string txt2)
@@ -124,14 +124,14 @@ namespace AppZipZop
                 var response = await httpClient.PostAsync("/20131011110061/api/usuario", content);
                 //string c = await response.Content.ReadAsStringAsync();
                 usuario.Id = int.Parse(await response.Content.ReadAsStringAsync());
-                /*using (file = IsolatedStorageFile.GetUserStoreForApplication())
+                using (file = IsolatedStorageFile.GetUserStoreForApplication())
                 {
                     using (filestream = file.OpenFile(arquivo, FileMode.Create))
                     {
                         xml = new XmlSerializer(typeof(Models.Usuario));
                         xml.Serialize(filestream, usuario);
                     }
-                }*/
+                } 
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             catch (Exception ex)

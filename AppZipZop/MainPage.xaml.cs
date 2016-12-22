@@ -40,7 +40,11 @@ namespace AppZipZop
         {
             
             InitializeComponent();
-            listMsg.ItemsSource = mensagens;
+            using (var dct = new bancoContext(bancoContext.ConnectionString))
+            {
+                dct.CreateIfNotExists();
+            }
+                listMsg.ItemsSource = mensagens;
 
             Loaded += (s, e) =>
             {
@@ -54,13 +58,19 @@ namespace AppZipZop
                     
                 }
             };
-            if (checkifUserExists()) getDados();
-            if (checkifUserHasMessages())
+            if (checkifUserExists())
+            {
+                getDados();
+                using (var dct = new bancoContext(bancoContext.ConnectionString)) listMsg.ItemsSource = dct.Mensagem.ToList();
+            }
+
+            
+            /*if (checkifUserHasMessages())
             {
                 
                 abrirArquivoMensagens();
                 
-            }
+            }*/
                 
             
 
